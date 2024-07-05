@@ -1,17 +1,11 @@
-class Triangulo: 
+class Circulo:
     def __init__(self):
-        self.b = 0
-        self.h = 0
+        self.r = 0
+        self.d = self.r * 2
     def calc_area(self):
-        return self.b * self.h / 2
+        return 3.14 * (self.r ** 2)
+    def calc_circu(self):
+        return 2 * 3.14 * self.r
 
-x = Triangulo()
-x.b = 10
-x.h = 10
-y = Triangulo()
-y.b = float(input("Base: "))
-y.h = float(input("Altura: "))
-z = Triangulo()
-
-print(y.calc_area())
-print(x.calc_area())
+c = Circulo()
+c.r = 5
